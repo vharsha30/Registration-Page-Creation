@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f0f4f8;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+
+  /* Outer and Inner Shadow */
+  box-shadow: 
+    0 0 10px #ccc,           /* Outer shadow */
+    inset 0 0 10px rgba(0, 0, 0, 0.6); /* Inner black shadow */
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: grid;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover {
+  border-color: #007BFF;
+}
+
+.gender {
+  display: flex;
+  gap: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#message {
+  margin-top: 20px;
+  color: green;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+}
